@@ -5,7 +5,6 @@
 
 ## Setup / Tear down - (Cluster + Registry)
 ```bash
-#!/bin/sh
 # Setup
 source .env
 ./scripts/cluster/create.sh
@@ -13,7 +12,6 @@ source .env
 ```
 
 ```bash
-#!/bin/sh
 # Tear down
 source .env
 ./scripts/cluster/destroy.sh
