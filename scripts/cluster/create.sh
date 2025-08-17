@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+source .env
+echo $CLUSTER_NAME
 doctl kubernetes clusters create \
     $CLUSTER_NAME \
     --region $REGION \

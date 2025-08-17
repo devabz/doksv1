@@ -1,4 +1,5 @@
-#!/bin/sh
-dotcl kubernetes clusters delete \
-    $CLUSTER_NAME
+#!/bin/bash
+source .env
+doctl kubernetes clusters delete \
+    $CLUSTER_NAME \
     --dangerous
